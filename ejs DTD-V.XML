@@ -1,0 +1,175 @@
+<!--  EJ 1   -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mercados [
+  <!ELEMENT mercados (mercado*)>
+  <!ELEMENT mercado (nombre, ciudad, productos)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT ciudad (#PCDATA)>
+  <!ELEMENT productos (producto*)>
+  <!ELEMENT producto (#PCDATA)>
+]>
+<mercados>
+  <mercado>
+    <nombre>La Boquería</nombre>
+    <ciudad>Barcelona</ciudad>
+    <productos>
+      <producto>Frutas</producto>
+      <producto>Verduras</producto>
+    </productos>
+  </mercado>
+  <mercado>
+    <nombre>Mercado Central</nombre>
+    <ciudad>Valencia</ciudad>
+    <productos>
+      <producto>Pescado</producto>
+      <producto>Carne</producto>
+    </productos>
+  </mercado>
+</mercados>
+<!--  EJ 2   -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE elementos [
+  <!ELEMENT elementos (elemento+)>
+  <!ELEMENT elemento (nombre, simbolo, numero_atomico)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT simbolo (#PCDATA)>
+  <!ELEMENT numero_atomico (#PCDATA)>
+]>
+<elementos>
+  <elemento>
+    <nombre>Hidrógeno</nombre>
+    <simbolo>H</simbolo>
+    <numero_atomico>1</numero_atomico>
+  </elemento>
+  <elemento>
+    <nombre>Helio</nombre>
+    <simbolo>He</simbolo>
+    <numero_atomico>2</numero_atomico>
+  </elemento>
+</elementos>
+<!--  EJ 3   -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aeropuertos [
+  <!ELEMENT aeropuertos (aeropuerto*)>
+  <!ELEMENT aeropuerto (nombre, ciudad, codigo)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT ciudad (#PCDATA)>
+  <!ELEMENT codigo (#PCDATA)>
+]>
+<aeropuertos>
+  <aeropuerto>
+    <nombre>Barajas</nombre>
+    <ciudad>Madrid</ciudad>
+    <codigo>MAD</codigo>
+  </aeropuerto>
+  <aeropuerto>
+    <nombre>El Prat</nombre>
+    <ciudad>Barcelona</ciudad>
+    <codigo>BCN</codigo>
+  </aeropuerto>
+</aeropuertos>
+<!--  EJ 4   -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vuelos [
+  <!ELEMENT vuelos (vuelo*)>
+  <!ELEMENT vuelo (origen, destino, duracion)>
+  <!ELEMENT origen (#PCDATA)>
+  <!ELEMENT destino (#PCDATA)>
+  <!ELEMENT duracion (#PCDATA)>
+]>
+<vuelos>
+  <vuelo>
+    <origen>Madrid</origen>
+    <destino>París</destino>
+    <duracion>2h</duracion>
+  </vuelo>
+  <vuelo>
+    <origen>Barcelona</origen>
+    <destino>Londres</destino>
+    <duracion>2h 15m</duracion>
+  </vuelo>
+</vuelos>
+<!--  EJ 5  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reyes [
+  <!ELEMENT reyes (rey*)>
+  <!ELEMENT rey (nombre, nacimiento, reinado)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT nacimiento (#PCDATA)>
+  <!ELEMENT reinado (#PCDATA)>
+]>
+<reyes>
+  <rey>
+    <nombre>Felipe VI</nombre>
+    <nacimiento>1968</nacimiento>
+    <reinado>2014 - presente</reinado>
+  </rey>
+  <rey>
+    <nombre>Juan Carlos I</nombre>
+    <nacimiento>1938</nacimiento>
+    <reinado>1975 - 2014</reinado>
+  </rey>
+</reyes>
+<!--  EJ 6   -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE peliculas [
+  <!ELEMENT peliculas (pelicula*)>
+  <!ELEMENT pelicula (titulo, director, anio)>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT director (#PCDATA)>
+  <!ELEMENT anio (#PCDATA)>
+]>
+<peliculas>
+  <pelicula>
+    <titulo>Inception</titulo>
+    <director>Christopher Nolan</director>
+    <anio>2010</anio>
+  </pelicula>
+  <pelicula>
+    <titulo>Interstellar</titulo>
+    <director>Christopher Nolan</director>
+    <anio>2014</anio>
+  </pelicula>
+</peliculas>
+<!--  EJ 7   -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE colores [
+  <!ELEMENT colores (color*)>
+  <!ELEMENT color (nombre, codigo)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT codigo (#PCDATA)>
+]>
+<colores>
+  <color>
+    <nombre>Rojo</nombre>
+    <codigo>#FF0000</codigo>
+  </color>
+  <color>
+    <nombre>Verde</nombre>
+    <codigo>#00FF00</codigo>
+  </color>
+</colores>
+<!--  EJ 8   -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE citas [
+  <!ELEMENT citas (cita*)>
+  <!ELEMENT cita (paciente, medico, fecha, hora)>
+  <!ELEMENT paciente (#PCDATA)>
+  <!ELEMENT medico (#PCDATA)>
+  <!ELEMENT fecha (#PCDATA)>
+  <!ELEMENT hora (#PCDATA)>
+]>
+<citas>
+  <cita>
+    <paciente>Juan Pérez</paciente>
+    <medico>Dr. López</medico>
+    <fecha>2025-04-06</fecha>
+    <hora>10:30</hora>
+  </cita>
+  <cita>
+    <paciente>Laura Martínez</paciente>
+    <medico>Dra. García</medico>
+    <fecha>2025-04-07</fecha>
+    <hora>11:00</hora>
+  </cita>
+</citas>
